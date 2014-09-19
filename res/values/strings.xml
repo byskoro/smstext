@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SendMe</string>
+    <string name="copy">Копировать</string>
+    <string name="send">Отправить</string>
+    <string name="coping">Скопировано</string>
+    <string name="selectMesedge">Выделите сообщение</string>
+    <string name="erroreInternet">Необходим интернет :)</string>
+
+</resources>

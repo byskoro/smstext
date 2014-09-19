@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="not_active">#ffD5D5D5</color>
+ <color name="active">#f8c913</color>
+</resources>
