@@ -111,7 +111,7 @@ public class MessageActivity extends Activity implements OnClickListener {
 			}
 			else{
 				
-			      Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.selectMesedge), Toast.LENGTH_SHORT); 
+			      Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.selectMessage), Toast.LENGTH_SHORT);
 			      toast.setGravity(Gravity.CENTER, 0, 0); 
 			      toast.show();
 			}
@@ -123,7 +123,7 @@ public class MessageActivity extends Activity implements OnClickListener {
 				CallBack.sendSMS(textMessage);
 			else{
 				
-			      Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.selectMesedge), Toast.LENGTH_SHORT); 
+			      Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.selectMessage), Toast.LENGTH_SHORT);
 			      toast.setGravity(Gravity.CENTER, 0, 0); 
 			      toast.show();
 			}

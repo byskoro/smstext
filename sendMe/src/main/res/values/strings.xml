@@ -5,7 +5,9 @@
     <string name="copy">Копировать</string>
     <string name="send">Отправить</string>
     <string name="coping">Скопировано</string>
-    <string name="selectMesedge">Выделите сообщение</string>
-    <string name="erroreInternet">Необходим интернет :)</string>
+    <string name="selectMessage">Выделите сообщение</string>
+    <string name="errorInternet">Необходим интернет :)</string>
+    <string name="url">http://sendme.esy.es/func.php?action=all&amp;lang=ru</string>
+    <string name="fileName">DayTwentyTwoFile</string>
 
 </resources>

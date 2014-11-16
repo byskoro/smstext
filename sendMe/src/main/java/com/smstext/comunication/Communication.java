@@ -11,7 +11,7 @@ import org.apache.http.util.EntityUtils;
 
 public class Communication {
 
-	  public static String ll_askServerControls(final String data){
+	  public static String ll_askServerControls(String data){
 
 		try {
 			HttpParams httpParameters = new BasicHttpParams();

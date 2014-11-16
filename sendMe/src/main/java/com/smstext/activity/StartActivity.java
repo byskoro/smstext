@@ -52,14 +52,14 @@ public class StartActivity extends Activity {
 		@Override
 		protected Void doInBackground(Void... params) {
 
-            String dataFromServer = Communication.ll_askServerControls("http://sendme.esy.es/func.php?action=all&lang=ru");
+            String dataFromServer = Communication.ll_askServerControls(getString(R.string.url));
 			
 			content = new Content(dataFromServer, parser);
 			
 			if(content.isParseDataState()){
 				
 				try {
-				    FileOutputStream fos = openFileOutput("DayTwentyTwoFile", Context.MODE_PRIVATE);
+				    FileOutputStream fos = openFileOutput(getString(R.string.fileName), Context.MODE_PRIVATE);
 				    fos.write(dataFromServer.getBytes());
 				    fos.close();
 				} catch (Exception e) { }
@@ -67,7 +67,7 @@ public class StartActivity extends Activity {
 			else{
 				
 				try {
-				    BufferedReader inputReader = new BufferedReader(new InputStreamReader(openFileInput("DayTwentyTwoFile")));
+				    BufferedReader inputReader = new BufferedReader(new InputStreamReader(openFileInput(getString(R.string.fileName))));
 				    String inputString;
 				    StringBuffer stringBuffer = new StringBuffer();                
 				    while ((inputString = inputReader.readLine()) != null) {
@@ -92,7 +92,7 @@ public class StartActivity extends Activity {
 			
 	        if( !content.isParseDataState() ){
 	        	
-			      Toast toast = Toast.makeText(getApplicationContext(),  getString(R.string.erroreInternet), Toast.LENGTH_SHORT); 
+			      Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.errorInternet), Toast.LENGTH_SHORT);
 			      toast.setGravity(Gravity.CENTER, 0, 0); 
 			      toast.show();
 			}
